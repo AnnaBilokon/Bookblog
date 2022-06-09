@@ -16,7 +16,7 @@ export const Main = () => (
 		</header>
 		<section>
 			<p>
-				
+			<img src='/components/images/IMG_20220223_092126_394.jpg' alt='picture'></img>
 			</p>
 		</section>
 		<footer className={styles.footer}>
