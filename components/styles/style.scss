@@ -1,0 +1,67 @@
+.header {
+	font-family: 'Kalam', cursive;
+	font-size: 36px;
+	text-align: center;
+	color:rgba(51, 50, 50, 0.822)
+    // font-family: 'Montagu Slab', serif;
+}
+.site-dropdown-context-menu {
+	color: #777;
+	background: #f7f7f7;
+  }
+  .nav {
+	height: 50px;
+	max-width: 1000px;
+	margin: 0 auto;
+	font-family: 'Alegreya', serif;
+	
+	display: flex;
+	justify-content: space-between; 
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 19px;
+	// margin: 20px;
+	align-items: center;
+	text-transform: uppercase;
+	color: #292828;
+	background-color: rgb(192, 190, 190);
+  }
+  .navLinks {
+	  margin: 10px 20px;
+  }
+  .footer{
+	min-height: 180px;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color:rgb(126, 126, 126);
+	height: 64px;
+  }
+  .footer_text{
+	max-height: 20px;
+	font-family: 'Kalam', cursive;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 43px;
+	display: flex;
+	justify-content: center;
+	padding-top: 16px;
+	color: #ffffff;
+  
+	opacity: 0.8;
+  }
+  .footer_text1{
+	max-height: 20px;
+	font-family: 'Kalam', cursive;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 43px;
+	display: flex;
+	justify-content: center;
+	padding-top: 16px;
+	color: #ffffff;
+  
+	opacity: 0.8;
+  }

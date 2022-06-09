@@ -45,6 +45,7 @@
     "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.3.0",
