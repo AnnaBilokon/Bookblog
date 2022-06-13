@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Main,App} from '../components/mainPage';
+import {Main,App, Links} from '../components/mainPage';
+import {Selection} from '../components/selection.jsx';
 
 ReactDOM.render(
 
-    <Main/>,
-    // <App/>,
+    // <Main/>,
+    <Links/>,
     document.getElementById('app')
 
 );
 
-// let overflow = document.querySelector('.components-styles-stylebookReview');
-// overflow.addEventListener('click', function() {
-// 	this.classList.toggle('is-active');
-// 	console.log('done');
-// });
+let selectionBtn = document.querySelector('.components-styles-styleselectionItem');
+selectionBtn.addEventListener('click', () => {
+	console.log('done');
+});

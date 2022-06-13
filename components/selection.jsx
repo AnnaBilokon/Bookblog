@@ -1,16 +1,12 @@
-/* eslint-disable max-len */
 import React  from 'react';
 import styles from './styles/style.scss';
 import 'antd/dist/antd.css';
 import {BrowserRouter, Switch, Route, NavLink, HashRouter} from 'react-router-dom';
-import {Selection} from './selection.jsx';
-import {Reviews} from './reviews.jsx';
-import {FavAuthors} from './selections/favAuthors';
 
-export const Main = () => (
-	<div>
-		<BrowserRouter>
-		<header>
+export const Selection = () => (
+<div>
+<BrowserRouter>
+<header>
 		<p className={styles.header}>READ_BOOKA</p>
 		<nav className={styles.nav}>
 		    <NavLink to={'/'} style={{color: 'black'}}><p className={styles.navLinks}>Главная</p></NavLink>
@@ -21,35 +17,26 @@ export const Main = () => (
 		</header>
 		<section>
 			<div className={styles.reviewBox}>
-			<p className={styles.departmentText}>Главная</p>
-			
+			<p className={styles.departmentText}>Подборки книг</p>
 			</div>
-		</section>
-		<footer className={styles.footer}>
+			<NavLink to={'/favoriteAuthors'} style={{color: 'black'}}> <div className={styles.selectionItem}>
+				<p className={styles.selectionItemTitle}>Любимая современная проза</p>
+			</div> </NavLink>
+			<div className={styles.selectionItem}>
+				<p className={styles.selectionItemTitle}>Книги о войне</p>
+			</div>
+			<div className={styles.selectionItem}>
+				<p className={styles.selectionItemTitle}>5 любимых зарубежных классиков</p>
+			</div>
+			<div className={styles.selectionItem}>
+				<p className={styles.selectionItemTitle}>Книги о любви</p>
+			</div>
+			</section>
+			<footer className={styles.footer}>
 		<p className={styles.footer_text1} >Книжный блог</p>
 		<p className={styles.footer_text}> © 2022 read_booka</p>
 		<p className={styles.footer_text}> ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
 		</footer>
-		</BrowserRouter>
-	</div>
-
+</BrowserRouter>
+</div>
 );
-
-export const pathes = {
-	main: '/',
-	selection: '/selection'
-  };
-
-export const Links = () => (
-	<div>
-	<BrowserRouter>
-    <Switch>
-	<Route exact path={'/'} component={Main}></Route>
-	<Route path={'/reviews'} component={Reviews}></Route>
-	<Route path={'/selection'} component={Selection}></Route>
-	<Route path={'/favoriteAuthors'} component={FavAuthors}></Route>
-    </Switch>
-  </BrowserRouter>
-	</div>
-  
-	);
