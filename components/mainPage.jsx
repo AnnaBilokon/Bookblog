@@ -43,7 +43,7 @@ export const pathes = {
 
 export const Links = () => (
 	<div>
-	<BrowserRouter>
+	<HashRouter>
     <Switch>
 	<Route exact path={'/'} component={Reviews}></Route>
 	<Route path={'/reviews'} component={Reviews}></Route>
@@ -51,7 +51,7 @@ export const Links = () => (
 	<Route path={'/favorite2021'} component={Fav2021}></Route>
 	<Route path={'/loveBooks'} component={LoveBooks}></Route>
     </Switch>
-  </BrowserRouter>
+  </HashRouter>
 	</div>
   
 	);
