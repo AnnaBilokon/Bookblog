@@ -5,11 +5,10 @@ import {BrowserRouter, Switch, Route, NavLink, HashRouter} from 'react-router-do
 
 export const Selection = () => (
 <div>
-<BrowserRouter>
 <header>
 		<p className={styles.header}>READ_BOOKA</p>
 		<nav className={styles.nav}>
-		    <NavLink to={'/'} style={{color: 'black'}}><p className={styles.navLinks}>Главная</p></NavLink>
+		    {/* <NavLink to={'/'} style={{color: 'black'}}><p className={styles.navLinks}>Главная</p></NavLink> */}
 			<NavLink to={'/reviews'} style={{color: 'black'}}><p className={styles.navLinks}>Рецензии на книги</p></NavLink>
             <NavLink to={'/selection'} style={{color: 'black'}}><p className={styles.navLinks}>Подборки книг</p></NavLink>
             <p className={styles.navLinks}>Новинки месяца</p>
@@ -19,8 +18,8 @@ export const Selection = () => (
 			<div className={styles.reviewBox}>
 			<p className={styles.departmentText}>Подборки книг</p>
 			</div>
-			<NavLink to={'/favoriteAuthors'} style={{color: 'black'}}> <div className={styles.selectionItem}>
-				<p className={styles.selectionItemTitle}>Любимая современная проза</p>
+			<NavLink to={'/favorite2021'} style={{color: 'black'}}> <div className={styles.selectionItem}>
+				<p className={styles.selectionItemTitle}>Лучшие книги 2021 года</p>
 			</div> </NavLink>
 			<div className={styles.selectionItem}>
 				<p className={styles.selectionItemTitle}>Книги о войне</p>
@@ -28,15 +27,14 @@ export const Selection = () => (
 			<div className={styles.selectionItem}>
 				<p className={styles.selectionItemTitle}>5 любимых зарубежных классиков</p>
 			</div>
-			<div className={styles.selectionItem}>
+			<NavLink to={'/loveBooks'} style={{color: 'black'}}><div className={styles.selectionItem}>
 				<p className={styles.selectionItemTitle}>Книги о любви</p>
-			</div>
+			</div> </NavLink>
 			</section>
 			<footer className={styles.footer}>
 		<p className={styles.footer_text1} >Книжный блог</p>
 		<p className={styles.footer_text}> © 2022 read_booka</p>
 		<p className={styles.footer_text}> ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
 		</footer>
-</BrowserRouter>
 </div>
 );
