@@ -11,7 +11,7 @@ ReactDOM.render(
 
 );
 
-let selectionBtn = document.querySelector('.components-styles-styleselectionItem');
-selectionBtn.addEventListener('click', () => {
-	console.log('done');
-});
+// let selectionBtn = document.querySelector('.components-styles-styleselectionItem');
+// selectionBtn.addEventListener('click', () => {
+// 	console.log('done');
+// });
