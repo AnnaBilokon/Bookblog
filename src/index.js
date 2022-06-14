@@ -10,8 +10,3 @@ ReactDOM.render(
     document.getElementById('app')
 
 );
-
-// let selectionBtn = document.querySelector('.components-styles-styleselectionItem');
-// selectionBtn.addEventListener('click', () => {
-// 	console.log('done');
-// });
