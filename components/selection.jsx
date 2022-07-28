@@ -22,7 +22,7 @@ export const Selection = () => (
 				<p className={styles.selectionItemTitle}>Лучшие книги 2021 года</p>
 			</div> </NavLink>
 			<div className={styles.selectionItem}>
-				<p className={styles.selectionItemTitle}>Книги о войне</p>
+				<p className={styles.selectionItemTitle}>Книги о Холокосте</p>
 			</div>
 			<div className={styles.selectionItem}>
 				<p className={styles.selectionItemTitle}>5 любимых зарубежных классиков</p>
